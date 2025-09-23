@@ -3,26 +3,6 @@ import React from "react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Navbar */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-4">
-              <div className="text-xl font-extrabold text-indigo-600">LangSkill</div>
-              <nav className="hidden md:flex gap-4 text-sm">
-                <a className="px-3 py-2 rounded-md hover:bg-indigo-50" href="#courses">Kelas</a>
-                <a className="px-3 py-2 rounded-md hover:bg-indigo-50" href="#features">Fitur</a>
-                <a className="px-3 py-2 rounded-md hover:bg-indigo-50" href="#testimonials">Testimoni</a>
-                <a className="px-3 py-2 rounded-md hover:bg-indigo-50" href="#pricing">Harga</a>
-              </nav>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <a href="/signup" className="bg-indigo-600 text-white px-4 py-2 text-sm rounded-md shadow hover:bg-indigo-700">Daftar Sekarang</a>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -75,7 +55,7 @@ export default function Home() {
             <section id="courses" className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold">Kursus Populer</h2>
-                <a href="#" className="text-sm text-indigo-600">Lihat Semua</a>
+                <a href="/kelas" className="text-sm text-indigo-600">Lihat Semua</a>
               </div>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -312,35 +292,11 @@ export default function Home() {
           <h3 className="text-2xl font-bold">Mulai perjalanan belajarmu hari ini</h3>
           <p className="mt-2">Pilih paket yang sesuai — Gratis untuk uji coba, dan paket berbayar untuk fitur lengkap.</p>
           <div className="mt-6 flex justify-center gap-4">
-            <a href="#" className="bg-white text-indigo-600 px-5 py-3 rounded-md font-semibold">Coba Gratis</a>
-            <a href="#" className="border border-white px-5 py-3 rounded-md">Lihat Paket</a>
+            <a href="/signup" className="bg-white text-indigo-600 px-5 py-3 rounded-md font-semibold">Coba Gratis</a>
+            <a href="/kelas" className="border border-white px-5 py-3 rounded-md">Lihat Paket</a>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-white border-t mt-12">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-8 grid md:grid-cols-3 gap-6">
-          <div>
-            <div className="font-bold text-indigo-600 text-lg">LangSkill</div>
-            <p className="mt-2 text-sm text-gray-600">Platform kursus bahasa online — Inggris, Jepang, Mandarin.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">Menu</h4>
-            <ul className="mt-2 text-sm text-gray-600 space-y-1">
-              <li><a href="#courses">Kursus</a></li>
-              <li><a href="#features">Fitur</a></li>
-              <li><a href="#testimonials">Testimoni</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold">Kontak</h4>
-            <p className="mt-2 text-sm text-gray-600">hello@langskill.id</p>
-            <p className="text-sm text-gray-600">+62 812-3456-7890</p>
-          </div>
-        </div>
-        <div className="text-center text-xs text-gray-400 py-4">© {new Date().getFullYear()} LangSkill. All rights reserved.</div>
-      </footer>
     </div>
   )
 }
